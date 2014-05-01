@@ -1,0 +1,10 @@
+name: EffectCommand
+main: pl.minefun.effectcommand.EffectCommand
+author: jakpok
+version: 0.1
+depend: [EffectLib]
+commands:
+  eff:
+    usage: /eff <arguments>
+    aliases: [e]
+    description: Main command
