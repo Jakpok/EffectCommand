@@ -16,11 +16,11 @@ public class HelixEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 	    HelixLocationEffect effect = new HelixLocationEffect(this.plugin.getEffectManager(), player.getLocation().add(0,3,0));
-	    effect.particle = particle;
-	    effect.iterations = time * 2;
-	    effect.particles = size * 4;
-	    effect.radius = size;
-	    effect.start();
+		effect.particle = particle;
+		effect.iterations = time * 2;
+		effect.particles = size * 4;
+		effect.radius = size;
+		effect.start();
 		
 	}
 

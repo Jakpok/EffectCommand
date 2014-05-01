@@ -16,10 +16,10 @@ public class StarEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 	    StarLocationEffect effect = new StarLocationEffect(this.plugin.getEffectManager(), player.getLocation().add(0,2,0));
-	    effect.particle = particle;
-	    effect.iterations = time * 5;
-	    effect.spikeHeight = size;
-	    effect.start();
+		effect.particle = particle;
+		effect.iterations = time * 5;
+		effect.spikeHeight = size;
+		effect.start();
 		
 	}
 

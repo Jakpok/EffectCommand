@@ -16,10 +16,10 @@ public class ShieldEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 		ShieldEntityEffect effect = new ShieldEntityEffect(this.plugin.getEffectManager(), player);
-	    effect.particle = particle;
-	    effect.iterations = time * 20;
-	    effect.radius = size;
-	    effect.start();		
+		effect.particle = particle;
+		effect.iterations = time * 20;
+		effect.radius = size;
+		effect.start();		
 	}
 
 }

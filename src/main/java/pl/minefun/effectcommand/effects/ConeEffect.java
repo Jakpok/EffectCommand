@@ -16,10 +16,10 @@ public class ConeEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 	    ConeLocationEffect effect = new ConeLocationEffect(this.plugin.getEffectManager(), player.getLocation().add(0,2,0));
-	    effect.particle = particle;
-	    effect.iterations = time * 20;
-	    effect.particles = size *2;
-	    effect.start();
+		effect.particle = particle;
+		effect.iterations = time * 20;
+		effect.particles = size *2;
+		effect.start();
 		
 	}
 

@@ -16,10 +16,10 @@ public class DnaEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 		DnaLocationEffect effect = new DnaLocationEffect(this.plugin.getEffectManager(), player.getLocation());
-	    effect.particleHelix = particle;
-	    effect.iterations = time * 20;
-	    effect.lenght = size;
-	    effect.start();
+		effect.particleHelix = particle;
+		effect.iterations = time * 20;
+		effect.lenght = size;
+		effect.start();
 		
 	}
 

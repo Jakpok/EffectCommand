@@ -16,11 +16,11 @@ public class AtomEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 	    AtomLocationEffect effect = new AtomLocationEffect(this.plugin.getEffectManager(), player.getLocation());
-	    effect.particleNucleus = particle;
-	    effect.iterations = time * 20;
-	    effect.radius = size;
-	    effect.particlesNucleus = (int) (10 * (0.8 * size));
-	    effect.start();
+		effect.particleNucleus = particle;
+		effect.iterations = time * 20;
+		effect.radius = size;
+		effect.particlesNucleus = (int) (10 * (0.8 * size));
+		effect.start();
 		
 	}
 

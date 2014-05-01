@@ -16,11 +16,11 @@ public class CubeEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 		CubeLocationEffect effect = new CubeLocationEffect(this.plugin.getEffectManager(), player.getLocation());
-	    effect.particle = particle;
-	    effect.iterations = time * 4;
-	    effect.particles = size *2;
-	    effect.edgeLenght = size;
-	    effect.start();
+		effect.particle = particle;
+		effect.iterations = time * 4;
+		effect.particles = size *2;
+		effect.edgeLenght = size;
+		effect.start();
 		
 	}
 

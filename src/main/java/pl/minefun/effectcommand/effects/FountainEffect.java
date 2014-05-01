@@ -16,12 +16,12 @@ public class FountainEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 		FountainLocationEffect effect = new FountainLocationEffect(this.plugin.getEffectManager(), player.getLocation());
-	    effect.particle = particle;
-	    effect.iterations = time * 5;
-	    effect.radius = size;
-	    effect.height = size;
-	    effect.heightSpout = size + 2;
-	    effect.start();
+		effect.particle = particle;
+		effect.iterations = time * 5;
+		effect.radius = size;
+		effect.height = size;
+		effect.heightSpout = size + 2;
+		effect.start();
 		
 	}
 

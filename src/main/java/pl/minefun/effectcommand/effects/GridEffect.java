@@ -16,11 +16,11 @@ public class GridEffect extends EffectExecutor{
 	@Override
 	protected void effect(Player player, ParticleEffect particle, int time, int size) {
 	    GridLocationEffect effect = new GridLocationEffect(this.plugin.getEffectManager(), player.getLocation());
-	    effect.particle = particle;
-	    effect.iterations = time * 4;
-	    effect.rows = size;
-	    effect.columns = size;
-	    effect.start();
+		effect.particle = particle;
+		effect.iterations = time * 4;
+		effect.rows = size;
+		effect.columns = size;
+		effect.start();
 		
 	}
 

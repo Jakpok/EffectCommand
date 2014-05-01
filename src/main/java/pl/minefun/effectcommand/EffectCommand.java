@@ -39,19 +39,19 @@ public class EffectCommand extends JavaPlugin {
 	
 	public void onEnable(){
 		EffectCommand.logger = getLogger();
-        try {
-            checkEffectLib();
-        } catch (Exception e) {
-            e.printStackTrace();
-            logger.warning("Error: EffectLib not found!");
-            setEnabled(false);
-            return;
-        }
-        this.configManager = new ConfigManager(this);
-        configManager.init();
-        prepareEffectMap();
-        getCommand("eff").setExecutor(new CommandBase(this));
-        logger.info("EffectCommand enabled!");     
+		try {
+		    checkEffectLib();
+		} catch (Exception e) {
+		    e.printStackTrace();
+		    logger.warning("Error: EffectLib not found!");
+		    setEnabled(false);
+		    return;
+		}
+		this.configManager = new ConfigManager(this);
+		configManager.init();
+		prepareEffectMap();
+		getCommand("eff").setExecutor(new CommandBase(this));
+		logger.info("EffectCommand enabled!");     
 	}
 	
 	public void onDisable(){
